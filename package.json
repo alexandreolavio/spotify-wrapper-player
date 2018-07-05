@@ -1,0 +1,26 @@
+{
+  "name": "spotify-wrapper-player",
+  "version": "1.0.0",
+  "description": "A player using the api-spotify-wrapper lib.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandreolavio/spotify-wrapper-player.git"
+  },
+  "keywords": [
+    "js",
+    "tdd",
+    "library"
+  ],
+  "author": "Alexandre Olavio <alexandrej.olavio@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexandreolavio/spotify-wrapper-player/issues"
+  },
+  "homepage": "https://github.com/alexandreolavio/spotify-wrapper-player#readme",
+  "devDependencies": {
+  }
+}
