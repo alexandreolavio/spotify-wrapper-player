@@ -2,15 +2,14 @@
   "name": "spotify-wrapper-player",
   "version": "1.0.0",
   "description": "A player using the api-spotify-wrapper lib.",
-  "main": "index.js",
+  "main": "src/bundle.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint src/app/**/*.js",
     "prepush": "npm run lint",
-    "test": "./node_modules/.bin/mocha src/test/**/*.spec.js  --require babel-register",
+    "test": "./node_modules/.bin/mocha src/test/**/*.spec.js --require babel-register",
     "test:tdd": "npm run test -- --watch",
     "test:coverage": "nyc npm test",
-    "start": "./node_modules/.bin/webpack-dev-server --open"
-
+    "start": "./node_modules/.bin/webpack-dev-server --progress --color --env.development --open"
   },
   "nyc": {
     "reporter": [
@@ -30,7 +29,7 @@
     "tdd",
     "library"
   ],
-  "author": "Alexandre Olavio <alexandrej.olavio@gmail.com>",
+  "author": "Alexandre Olavio <alexandreolavio@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/alexandreolavio/spotify-wrapper-player/issues"
@@ -43,7 +42,6 @@
     "chai": "^3.5.0",
     "eslint": "^3.7.1",
     "eslint-config-airbnb": "^12.0.0",
-    "eslint-plugin-chai-friendly": "^0.4.1",
     "eslint-plugin-import": "^2.0.1",
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.4.1",
@@ -54,5 +52,8 @@
     "nyc": "^10.2.0",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "api-spotify-wrapper": "^1.0.2"
   }
 }
