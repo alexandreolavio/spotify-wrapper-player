@@ -2,7 +2,7 @@
   "name": "spotify-wrapper-player",
   "version": "1.0.0",
   "description": "A player using the api-spotify-wrapper lib.",
-  "main": "src/bundle.js",
+  "main": "src/index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint src/app/**/*.js",
     "prepush": "npm run lint",
